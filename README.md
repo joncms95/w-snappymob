@@ -48,7 +48,7 @@ This repository contains the solution to the Snappymob Programming Challenge.
 
 - `Ruby 2.5.9` (or compatible version) installed locally.
 - `Docker` installed.
-- Bundler and Gems:
+- Gems:
   The project uses the `colorize` gem.
 
   ```bash
