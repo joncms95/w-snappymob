@@ -94,7 +94,7 @@ generator = ARGV[0] || 'base'
 output_file = ARGV[1] || 'default.txt'
 
 object_generator = GENERATOR_MAPPING[generator]
-raise "Error: Invalid generator '#{generator}'. Use one of: #{GENERATOR_MAPPING.keys}, Usage: ruby challenge_a.rb <generator> <output_file>".red unless object_generator
+raise "Error: Invalid generator '#{generator}'. Use one of: #{GENERATOR_MAPPING.keys}, Usage: ruby challenge_a.rb <generator> <output_file>".red.bold unless object_generator
 
 exporter = OutputExporter.new(object_generator: object_generator, output_file: output_file)
 exporter.generate_and_write

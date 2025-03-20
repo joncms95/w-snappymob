@@ -1,6 +1,6 @@
-FROM ruby:2.7.6-alpine
+FROM ruby:2.5.9-alpine
 
-RUN gem install colorize
+RUN gem install colorize -v 0.8.1
 
 WORKDIR /app
 

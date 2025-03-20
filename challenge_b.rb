@@ -3,7 +3,7 @@ require 'colorize'
 class FileParser
   class << self
     def parse_file(input_file = 'default.txt')
-      raise "Error: Invalid input file '#{input_file}'. Please run `ruby challenger_a.rb` to generate a file first!".red unless File.exist?(input_file)
+      raise "Error: Invalid input file '#{input_file}'. Please run `ruby challenger_a.rb` to generate a file first!".red.bold unless File.exist?(input_file)
 
       content = File.read(input_file)
       objects = content.split(',').map(&:strip)
